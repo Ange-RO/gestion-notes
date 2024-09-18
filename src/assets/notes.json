@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Réunion avec l'équipe",
+      "content": "Discussion sur le projet en cours, les délais et les prochaines étapes.",
+      "category": "Travail"
+    },
+    {
+      "title": "Liste de courses",
+      "content": "1. Pommes\n2. Lait\n3. Pain\n4. Café",
+      "category": "Personnel"
+    },
+    {
+      "title": "Idées de vacances",
+      "content": "1. Bali, Indonésie\n2. Tokyo, Japon\n3. Paris, France\n4. New York, USA",
+      "category": "Voyages"
+    },
+    {
+      "title": "Lecture actuelle",
+      "content": "Le Nom de la Rose par Umberto Eco. Noter les idées principales et les thèmes.",
+      "category": "Loisirs"
+    },
+    {
+      "title": "Exercices à faire cette semaine",
+      "content": "1. 30 minutes de course\n2. Yoga trois fois\n3. Haltérophilie",
+      "category": "Santé"
+    },
+    {
+      "title": "Films à regarder",
+      "content": "1. Inception\n2. The Matrix\n3. Interstellar\n4. Parasite",
+      "category": "Divertissement"
+    },
+    {
+      "title": "Plan de travail pour le projet X",
+      "content": "Établir un calendrier de livraison et assigner des tâches aux membres de l'équipe.",
+      "category": "Travail"
+    }
+  ]
+  

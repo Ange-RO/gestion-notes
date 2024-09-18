@@ -1,24 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-white text-2xl">Gestion de Notes</h1>
+      </div>
+    </nav>
+    <SearchAndFilter />
+    <AddNote />
+    <EditNote />
+    <NoteList />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AddNote from './components/AddNote.vue';
+import NoteList from './components/NoteList.vue';
+import SearchAndFilter from './components/SearchAndFilter.vue';
+import EditNote from './components/EditNote.vue';
+import { useNoteStore } from './stores/noteStore';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    AddNote,
+    NoteList,
+    SearchAndFilter,
+    EditNote,
+  },
+  setup() {
+    const noteStore = useNoteStore();
+    noteStore.loadNotes();
+    return { noteStore };
+  },
 }
 </script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
